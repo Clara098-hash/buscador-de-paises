@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 3%;
+  background-color: #461C56;
+  color: #ffffff; 
+}
+h1, h2 {
+  color: #ffe600; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.inputBusca input {
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #C74FE5;
+  outline: none;
+  width: 300px;
+  background-color: #fff8fa;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.inputBusca input::placeholder {
+  color: #C74FE5; 
+}
+
+.inputBusca input:focus {
+  border-color: #e06a92;
+  background-color: #fdf3f7;
+}
+
+.filtros {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filtros input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ffffff; 
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filtros input[type="radio"]:checked {
+  background-color: #C74FE5;
+  border-color: #C74FE5;
+}
+
+.filtros label {
+  font-size: 1rem; 
+  color: #ffffff; 
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e6e1e3;
+  margin: 20px 0;
+}
+
+.todosPaises {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #C74FE5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 160px;
+  text-align: center;
+}
+
+.pais:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background-color: #f8e5eb;
+}
+
+.pais img {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  border: 3px solid #461C56;
+}
+
+.pais h3 {
+  font-size: 1rem;
+  color: #000000; 
+  margin-bottom: 5px;
+  transition: color 0.3s ease; /* Adicionado para transição suave */
+}
+
+.pais h3:hover {
+  color: #ff007f; /* Cor rosa ao passar o mouse */
+}
+
+.pais p {
+  font-size: 0.9rem;
+  color: #333333; 
+  transition: color 0.3s ease; /* Adicionado para transição suave */
+}
+
+.pais p:hover {
+  color: #ff007f; /* Cor rosa ao passar o mouse */
+}
+
+.pais[data-continent="america"] {
+  background-color: #ffe5ec;
+}
+
+.pais[data-continent="europe"] {
+  background-color: #f4e5ff;
+}
+
+.pais[data-continent="asia"] {
+  background-color: #e5f5ff;
+}
+
+.pais[data-continent="africa"] {
+  background-color: #fffbe5;
+}
+
+.pais-detalhes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #C74FE5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pais-detalhes:hover {
+  transform: translateY(-5px);
+}
+
+.pais-detalhes img {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  border: 3px solid #461C56;
+}
+
+.pais-detalhes p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #ffffff; 
+}
+
+.pais-detalhes a {
+  color: #ffe600; 
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pais-detalhes a:hover {
+  text-decoration: underline;
+}
